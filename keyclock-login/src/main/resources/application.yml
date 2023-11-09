@@ -1,0 +1,31 @@
+server:
+  port: 9090
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/training
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+
+#  h2:
+#    console:
+#      enabled: true
+#  datasource:
+#    url: jdbc:h2:mem:keyclock
+
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/akshaykk
+          jwk-set-uri: http://localhost:8080/realms/akshaykk/protocol/openid-connect/certs
+
+
