@@ -29,3 +29,10 @@ spring:
           jwk-set-uri: http://localhost:8080/realms/akshaykk/protocol/openid-connect/certs
 
 
+keyclock:
+  serverUrl: http://localhost:8080/auth
+  realm: master
+  username: app-admin
+  password: admin
+  clientId: 3B7OAFq62Mu47co2i1T6qOIenafJ25Yq
+
